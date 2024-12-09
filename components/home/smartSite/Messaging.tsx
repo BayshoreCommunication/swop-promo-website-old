@@ -14,12 +14,12 @@ const Messaging = () => {
         "min-w-[330px] h-full m-auto bg-[#F5F5F5] rounded-2xl p-4 flex flex-col justify-between"
       }
     >
-      <div className="relative h-[185px] w-[422px] md:w-[300px] lg:w-[430px] 2xl:w-full m-auto">
+      <div className="relative h-[185px] w-[350px] md:w-[300px] lg:w-[430px] 2xl:w-full m-auto">
         <ScrollMotionEffect
           effect="fade-up"
           duration="2000"
           delay={"0"}
-          className="m-auto absolute top-[15%] left-4 right-0 bottom-0 w-[46%] md:w-[65%] lg:w-[45%] -z-10"
+          className="m-auto absolute top-[15%] left-4 right-0 bottom-0 w-[55%] md:w-[65%] lg:w-[45%] -z-10"
         >
           <Image
             src="/assets/home/smart-site/messagesBack.svg"
