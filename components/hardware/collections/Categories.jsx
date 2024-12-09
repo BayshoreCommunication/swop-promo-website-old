@@ -26,12 +26,16 @@ const Categories = ({ title, titleImage, products }) => {
           />
           <div
             className={cn(
-              "relative   lg:translate-x-24 xl:translate-x-24 2xl:translate-x-24 max-w-60 lg:w-[250px] place-items-start h-[70%] flex flex-col justify-center items-center",
+              "relative   lg:translate-x-24 xl:translate-x-24 2xl:translate-x-24 max-w-60 lg:w-[250px] place-items-start h-[80%] flex flex-col justify-center items-center",
+              title === "Business Card" && " translate-y-10 lg:translate-y-0 ",
+              title === "Phone Attachments" &&
+                " translate-y-10 md:translate-y-0 ",
               title === "Hospitality" &&
                 "scale-125 translate-y-10 lg:translate-y-0 xl:scale-150",
               title === "Pets" &&
-                "scale-90 translate-y-5 xl:scale-100 2xl:scale-110 lg:-translate-y-5 ",
-              title === "Wearables" && "xl:scale-125",
+                "scale-90 translate-y-10 xl:scale-100 2xl:scale-110 lg:-translate-y-5 ",
+              title === "Wearables" &&
+                "translate-y-10 md:translate-y-0 xl:scale-125",
               title === "Stickers" &&
                 "scale-125 xl:scale-150 translate-y-10 lg:translate-y-0"
             )}
