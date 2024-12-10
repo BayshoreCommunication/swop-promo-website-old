@@ -8,7 +8,7 @@ import { FiShoppingCart } from "react-icons/fi";
 const Categories = ({ title, titleImage, products }) => {
   return (
     <SectionLayout className="gradient-circle-top -z-50">
-      <section className=" xl:px-20 grid grid-cols-1 gap-10 ">
+      <section className=" xl:px-20 grid grid-cols-1 gap-1 ">
         <div className="h-[600px] flex flex-col lg:flex-row gap-5 lg:gap-36 xl:gap-60 justify-start py-5 xl:py-0 lg:justify-center items-center relative rounded-lg">
           <Image
             src="/assets/hardware/collection/blackBg.svg"
@@ -22,7 +22,7 @@ const Categories = ({ title, titleImage, products }) => {
             alt={title}
             height={200}
             width={200}
-            className="absolute top-0 left-0 h-full w-full -z-10 rounded-3xl lg:hidden"
+            className="absolute top-0 left-0 h-full w-full xs:scale-y-150 sm:scale-y-125 md:scale-y-100 -z-10 rounded-3xl lg:hidden"
           />
           <div
             className={cn(
@@ -31,13 +31,13 @@ const Categories = ({ title, titleImage, products }) => {
               title === "Phone Attachments" &&
                 " translate-y-10 md:translate-y-0 ",
               title === "Hospitality" &&
-                "scale-125 translate-y-10 lg:translate-y-0 xl:scale-150",
+                "xs:scale-100 sm:scale-125 translate-y-10 lg:translate-y-0 xl:scale-150",
               title === "Pets" &&
                 "scale-90 translate-y-10 xl:scale-100 2xl:scale-110 lg:-translate-y-5 ",
               title === "Wearables" &&
                 "translate-y-10 md:translate-y-0 xl:scale-125",
               title === "Stickers" &&
-                "scale-125 xl:scale-150 translate-y-10 lg:translate-y-0"
+                "xs:scale-110 sm:scale-125 xl:scale-150 translate-y-10 lg:translate-y-0"
             )}
           >
             <Image
@@ -48,10 +48,10 @@ const Categories = ({ title, titleImage, products }) => {
               className="w-full lg:scale-110"
             />
           </div>
-          <div className="text-center text-white text-2xl flex flex-col justify-center items-center  lg:text-3xl h-[30%] w-[468px] font-light relative -translate-y-10 lg:-translate-y-0">
+          <div className="text-center text-white text-xl md:text-2xl flex flex-col justify-center items-center  lg:text-3xl h-[30%] w-[468px] font-light relative -translate-y-10 lg:-translate-y-0">
             <h2 className="">
               <span
-                className="block text-3xl lg:text-5xl font-semibold
+                className="block text-2xl md:text-3xl lg:text-5xl font-semibold
           "
               >
                 {title}
@@ -60,7 +60,7 @@ const Categories = ({ title, titleImage, products }) => {
             </h2>
           </div>
         </div>
-        <div className=" p-5 flex flex-row flex-wrap gap-10 lg:gap-16  justify-center items-center gradient-circle-top -z-50">
+        <div className=" px-5 flex flex-row flex-wrap gap-10 lg:gap-16  justify-center items-center gradient-circle-top -z-50">
           {products.map((el) => {
             return (
               <div
