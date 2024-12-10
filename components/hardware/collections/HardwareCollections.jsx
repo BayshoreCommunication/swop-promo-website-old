@@ -23,7 +23,7 @@ const HardwareCollections = () => {
       />
       <Categories
         title={"Pets"}
-        titleImage={"/assets/hardware/collection/pets/pets.svg"}
+        titleImage={"/assets/hardware/collection/pets/pets.png"}
         products={hardwareCollections.Pets}
       />
       <Categories
