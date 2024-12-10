@@ -48,7 +48,8 @@ const HeroSection = () => {
                 src="/assets/home/heroImage.svg"
                 alt="heroImage"
                 width={500}
-                height={500}
+                height={800}
+                quality={100}
               />
             </ScrollMotionEffect>
           </div>
@@ -60,6 +61,7 @@ const HeroSection = () => {
                   alt="appStore"
                   width={120}
                   height={120}
+                  quality={100}
                 />
               </ScrollMotionEffect>
             </Link>
@@ -70,6 +72,7 @@ const HeroSection = () => {
                   alt="googlePlay"
                   width={120}
                   height={120}
+                  quality={100}
                 />
               </ScrollMotionEffect>
             </Link>
