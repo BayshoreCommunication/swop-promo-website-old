@@ -8,7 +8,7 @@ import Image from "next/image";
 const productInfo = [
   {
     size: "20mm",
-    img: "/assets/hardware/products/business-cards.svg",
+    img: "/assets/hardware/products/businessCards.png",
     title: "Business Cards",
     slug: "business-cards",
     decs: `Upgrade from traditional paper cards with Swop’s reusable digital cards that collect data for your company`,
