@@ -31,17 +31,20 @@ const HeroSection = () => {
           exit={{ opacity: 0, transition: { duration: 1 } }}
           variants={{ visible: { transition: { staggerChildren: 0.1 } } }}
         >
-          <h1
-            className={cn(
-              "text-2xl md:text-5xl font-bold text-black text-center leading-tight tracking-normal [text-shadow:_0px_4px_4px_rgb(80_80_80_/_0.5)]",
-              fira.className
-            )}
-          >
-            The <span className="text-[#B396FF]"> Digital </span>Business Card
-            <span className="block text-2xl md:text-3xl py-6">
-              That Pays You to<span className="text-[#B396FF]"> Network </span>
-            </span>
-          </h1>
+          <ScrollMotionEffect effect="flip-up" duration="1000">
+            <h1
+              className={cn(
+                "text-2xl md:text-5xl font-bold text-black text-center leading-tight tracking-normal [text-shadow:_0px_4px_4px_rgb(80_80_80_/_0.5)]",
+                fira.className
+              )}
+            >
+              The <span className="text-[#B396FF]"> Digital </span>Business Card
+              <span className="block text-2xl md:text-3xl py-6">
+                That Pays You to
+                <span className="text-[#B396FF]"> Network </span>
+              </span>
+            </h1>
+          </ScrollMotionEffect>
           <div className="flex justify-center pt-12">
             <ScrollMotionEffect effect="zoom-in" duration="2000">
               <Image
